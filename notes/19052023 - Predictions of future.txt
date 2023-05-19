@@ -1,0 +1,21 @@
+--- Generel plan ---
+To study ADVANCED DATAANALYSIS
+- Find useful examples
+-- Use principles of statistics on this data
+- Machine learning perspectives?
+- Clustering methods?
+
+___Articles brainstorm___: 
+Machine learning ATLAS
+- https://web.archive.org/web/20220629223726id_/http://ikee.lib.auth.gr/record/340087/files/GRI-2022-35614.pdf
+
+
+Data mining CERN: 
+- https://link.springer.com/chapter/10.1007/978-3-319-31753-3_25
+Also, Forest CERN is fully independent of any parameter value unlike Random Subspace, Random Forest and SysFor to be more evenly suitable for a wide range of data sets.
+
+
+
+
+
+
