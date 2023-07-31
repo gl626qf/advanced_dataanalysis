@@ -1,0 +1,10 @@
+set terminal svg
+set output "gauss.svg"
+set xlabel "x"
+set ylabel "f(x; µ, σ)"
+set title "Gaussian PDF"
+set terminal svg background "white"
+set key right bottom width 1
+set pointintervalbox 3
+
+plot [-10:10] [0:0.3] "Out.function1.txt" using 1:2 with points pt 0.2 ps 2 title "1/sqrt(2*pi*σ^2) * exp(-(x-µ)^2/2σ^2)" \

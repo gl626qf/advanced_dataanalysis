@@ -1,0 +1,10 @@
+set terminal svg
+set output "binomial.svg"
+set xlabel "x"
+set ylabel "f(x; µ, σ)"
+set title "Binomial PDF"
+set terminal svg background "white"
+set key right bottom width 1
+set pointintervalbox 3
+
+plot [0:100][0:0.4] "Out.binomial.txt" using 1:2 with points

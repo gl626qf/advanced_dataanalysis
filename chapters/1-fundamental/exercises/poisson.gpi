@@ -1,0 +1,10 @@
+set terminal svg
+set output "poisson.svg"
+set xlabel "x"
+set ylabel "f(x; µ, σ)"
+set title "Poisson PDF"
+set terminal svg background "white"
+set key right bottom width 1
+set pointintervalbox 3
+
+plot "Out.poisson.txt" using 1:2 with points
