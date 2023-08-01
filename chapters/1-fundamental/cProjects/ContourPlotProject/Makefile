@@ -4,7 +4,7 @@
 CS_SRC = Program
 
 # Set the name of the Gnuplot script file (without the extension)
-# GPI_SCRIPT = contour_plot
+GPI_SCRIPT = contour_plotm
 
 # Set the output folder for the generated files
 OUTPUT_DIR = Output
@@ -19,10 +19,10 @@ build_cs:
 	@mcs -out:$(OUTPUT_DIR)/$(CS_SRC).exe SourceCode/$(CS_SRC).cs
 
 # Target for building the Gnuplot script
-# build_gpi:
-# 	@echo "Building Gnuplot script..."
-# 	@cp $(GPI_SCRIPT).gpi $(OUTPUT_DIR)
-# 	@cd $(OUTPUT_DIR) && gnuplot $(GPI_SCRIPT).gpi
+build_gpi:
+	@echo "Building Gnuplot script..."
+	@cp $(GPI_SCRIPT).gpi $(OUTPUT_DIR)
+	@cd $(OUTPUT_DIR) && gnuplot $(GPI_SCRIPT).gpi
 
 # Target for cleaning (removing) the generated files
 clean:
