@@ -1,0 +1,2 @@
+Solution:  -9.61e-09  -9.24e-09 
+Function evaluated at vector: 0.797884560802865
