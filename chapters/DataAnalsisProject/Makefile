@@ -1,13 +1,16 @@
 # Makefile for DataAnalysisProject
 
 # Specify the main entry point source file
-MAIN_SOURCE = Source/Program.cs
+MAIN_SOURCE = DataAnalysisProject/Source/Program.cs
 
 # Specify the source files (including folders) for the main project
-MAIN_SOURCES = $(wildcard Source/*.cs)
+MAIN_SOURCES = DataAnalysisProject/Source/Program.cs \
+    DataAnalysisProject/Source/Analysis/DataAnalyzer.cs \
+    # DataAnalysisProject/Source/DataAccess/Dataloader.cs
+
 
 # Specify the source files (including folders) for the test project
-TEST_SOURCES = $(wildcard Tests/UnitTests/*.cs)
+# TEST_SOURCES = $(wildcard Tests/UnitTests/*.cs)
 
 # Specify the compiler and compiler options
 CS_COMPILER = mcs
@@ -18,9 +21,9 @@ build:
 	$(CS_COMPILER) $(CS_FLAGS) $(MAIN_SOURCES)
 
 # Test target: Compile and run unit tests
-test:
-	$(CS_COMPILER) $(CS_FLAGS) $(MAIN_SOURCES) $(TEST_SOURCES)
-	mono DataAnalysisProject.exe
+# test:
+# 	$(CS_COMPILER) $(CS_FLAGS) $(MAIN_SOURCES) $(TEST_SOURCES)
+# 	mono DataAnalysisProject.exe
 
 # Clean target: Clean build artifacts
 clean:
@@ -28,8 +31,8 @@ clean:
 
 # Additional targets (optional): Add any other targets you need for your project
 # For example, you can add targets for running the application, packing NuGet packages, etc.
-# run:
-# 	mono DataAnalysisProject.exe
+run:
+	mono DataAnalysisProject.exe
 
 # pack:
 # 	# Add packing commands for your project if needed

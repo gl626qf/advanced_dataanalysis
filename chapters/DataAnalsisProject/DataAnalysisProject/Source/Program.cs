@@ -1,5 +1,5 @@
 using System;
-using DataAnalysisProject.Source.DataAccess;
+
 
 namespace DataAnalysisProject
 {
@@ -15,8 +15,8 @@ namespace DataAnalysisProject
             // string csvFilePath = "Data/RawData/raw_data_file.csv";
 
 
-            DataLoader dataLoader = new DataLoader();
-            double[] data = dataLoader.LoadDataFromCsv("advanced_dataanalysis/chapters/HiggsChiSquaredProject/Data/RawData/data.csv");
+            // DataLoader dataLoader = new DataLoader();
+            // double[] data = dataLoader.LoadDataFromCsv("advanced_dataanalysis/chapters/HiggsChiSquaredProject/Data/RawData/data.csv");
 
 
             // Use the loaded data as needed
