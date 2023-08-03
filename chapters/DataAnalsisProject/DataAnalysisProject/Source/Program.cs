@@ -2,6 +2,7 @@ using System;
 using static System.Console;
 using DataAnalysisProject.Source.Analysis;
 using DataAnalysisProject.Source.DataAccess;
+using DataAnalysisProject.Source.Models;
 
 namespace DataAnalysisProject
 {
@@ -11,13 +12,30 @@ namespace DataAnalysisProject
         {
             Console.WriteLine("Data Analysis Project");
             
-            // Trying out the DataAnalyzer.cs
-            DataAnalyzer dataAnalyzer = new DataAnalyzer();
-            dataAnalyzer.Test();
+            // // Trying out the DataAnalyzer.cs
+            // DataAnalyzer dataAnalyzer = new DataAnalyzer();
+            // dataAnalyzer.Test();
 
 
-            DataLoader dataLoader = new DataLoader();
-            dataLoader.Test();
+            // DataLoader dataLoader = new DataLoader();
+            // dataLoader.Test();
+
+
+            Console.WriteLine("Data Analysis Project");
+
+            string csvFilePath = "Data/RawData/data.csv";
+            YourDataType[] data = DataLoader.LoadDataFromCsv(csvFilePath);
+
+            // Use the loaded data as needed
+            foreach (var item in data)
+            {
+                Console.WriteLine($"Column1: {item.Column1}, Column2: {item.Column2}, Column3: {item.Column3}");
+            }
+
+            // Add your data analysis code here
+
+            Console.WriteLine("Data analysis completed. Press any key to exit.");
+            Console.ReadKey();
 
 
             
@@ -83,3 +101,33 @@ namespace DataAnalysisProject
     // public class YourDataType { /* ... */ }
     // public class AnalysisResult { /* ... */ }
 }
+
+
+
+// using System;
+// using DataAnalysisProject.Source.DataAccess;
+
+// namespace DataAnalysisProject
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             Console.WriteLine("Data Analysis Project");
+
+//             string csvFilePath = "path/to/your/dataset.csv";
+//             YourDataType[] data = DataLoader.LoadDataFromCsv(csvFilePath);
+
+//             // Use the loaded data as needed
+//             foreach (var item in data)
+//             {
+//                 Console.WriteLine($"Column1: {item.Column1}, Column2: {item.Column2}, Column3: {item.Column3}");
+//             }
+
+//             // Add your data analysis code here
+
+//             Console.WriteLine("Data analysis completed. Press any key to exit.");
+//             Console.ReadKey();
+//         }
+//     }
+// }

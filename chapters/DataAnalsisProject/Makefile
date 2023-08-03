@@ -4,9 +4,15 @@
 MAIN_SOURCE = DataAnalysisProject/Source/Program.cs
 
 # Specify the source files (including folders) for the main project
-MAIN_SOURCES = DataAnalysisProject/Source/Program.cs \
-    DataAnalysisProject/Source/Analysis/DataAnalyzer.cs \
-    DataAnalysisProject/Source/DataAccess/DataLoader.cs \
+# MAIN_SOURCES = DataAnalysisProject/Source/Program.cs \
+#     DataAnalysisProject/Source/Analysis/DataAnalyzer.cs \
+#     DataAnalysisProject/Source/DataAccess/DataLoader.cs \
+
+
+MAIN_SOURCES =  DataAnalysisProject/Source/Program.cs\
+				$(wildcard DataAnalysisProject/Source/Analysis/*.cs) \
+				$(wildcard DataAnalysisProject/Source/DataAccess/*.cs) \
+				$(wildcard DataAnalysisProject/Source/Models/*.cs)
 
 
 # Specify the source files (including folders) for the test project
