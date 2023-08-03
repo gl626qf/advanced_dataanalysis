@@ -2,7 +2,7 @@ using System;
 using static System.Console;
 using System.Collections.Generic;
 
-namespace DataAnalysisProject.Source.Analysis
+namespace DataAnalysisProject.Analysis
 {
     public class DataAnalyzer
     {
@@ -10,8 +10,8 @@ namespace DataAnalysisProject.Source.Analysis
 
         // Example method for analyzing data
 
-        public void Test(){
-            WriteLine("...DataAnalyzer.cs connected");
+        public static void Test(){
+            WriteLine("Working");
         }
 
         // public AnalysisResult AnalyzeData(List<double> data)

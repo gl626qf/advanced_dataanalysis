@@ -6,7 +6,7 @@ MAIN_SOURCE = DataAnalysisProject/Source/Program.cs
 # Specify the source files (including folders) for the main project
 MAIN_SOURCES = DataAnalysisProject/Source/Program.cs \
     DataAnalysisProject/Source/Analysis/DataAnalyzer.cs \
-    DataAnalysisProject/Source/DataAccess/DataLoader.cs \
+    # DataAnalysisProject/Source/DataAccess/Dataloader.cs
 
 
 # Specify the source files (including folders) for the test project

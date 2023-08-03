@@ -1,7 +1,5 @@
 using System;
-using static System.Console;
-using DataAnalysisProject.Source.Analysis;
-using DataAnalysisProject.Source.DataAccess;
+
 
 namespace DataAnalysisProject
 {
@@ -10,17 +8,7 @@ namespace DataAnalysisProject
         static void Main(string[] args)
         {
             Console.WriteLine("Data Analysis Project");
-            
-            // Trying out the DataAnalyzer.cs
-            DataAnalyzer dataAnalyzer = new DataAnalyzer();
-            dataAnalyzer.Test();
 
-
-            DataLoader dataLoader = new DataLoader();
-            dataLoader.Test();
-
-
-            
             // Add your data analysis code here
 
             // Example: Load data from CSV file
