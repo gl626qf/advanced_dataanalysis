@@ -18,6 +18,8 @@ namespace DataAnalysisProject.Source.DataAccess
         {
             List<YourDataType> dataList = new List<YourDataType>();
 
+
+
             try
             {
                 using (var reader = new StreamReader(filePath))

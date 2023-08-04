@@ -1,5 +1,6 @@
 using System;
 using static System.Console;
+using System.IO;
 using DataAnalysisProject.Source.Analysis;
 using DataAnalysisProject.Source.DataAccess;
 using DataAnalysisProject.Source.Models;
@@ -10,6 +11,7 @@ namespace DataAnalysisProject
     {
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Data Analysis Project");
             
             // // Trying out the DataAnalyzer.cs
@@ -21,21 +23,40 @@ namespace DataAnalysisProject
             // dataLoader.Test();
 
 
-            Console.WriteLine("Data Analysis Project");
 
-            string csvFilePath = "Data/RawData/data.csv";
-            YourDataType[] data = DataLoader.LoadDataFromCsv(csvFilePath);
+            // string csvFilePath = "Data/RawData/data.csv";
+            // YourDataType[] data = DataLoader.LoadDataFromCsv(csvFilePath);
 
-            // Use the loaded data as needed
-            foreach (var item in data)
+            // // Use the loaded data as needed
+            // foreach (var item in data)
+            // {
+            //     Console.WriteLine($"Column1: {item.Column1}, Column2: {item.Column2}, Column3: {item.Column3}");
+            // }
+
+            // // Add your data analysis code here
+
+            // Console.WriteLine("Data analysis completed. Press any key to exit.");
+            // Console.ReadKey();
+
+
+        
+            string filePath = "DataAnalysisProject/Data/RawData/data.csv"; // Replace with your actual file path
+            
+            try
             {
-                Console.WriteLine($"Column1: {item.Column1}, Column2: {item.Column2}, Column3: {item.Column3}");
+                // Read the data from the file
+                string data = File.ReadAllText(filePath);
+                
+                // Print the loaded data to the console
+                Console.WriteLine("Data loaded successfully:");
+                Console.WriteLine(data);
             }
-
-            // Add your data analysis code here
-
-            Console.WriteLine("Data analysis completed. Press any key to exit.");
-            Console.ReadKey();
+            catch (Exception ex)
+            {
+                // Handle any exceptions that occur during data reading
+                Console.WriteLine($"Error reading data: {ex.Message}");
+            }
+        
 
 
             
