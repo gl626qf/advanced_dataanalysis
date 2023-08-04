@@ -1,14 +1,24 @@
 using System;
+using static System.Console;
 using System.Collections.Generic;
 using System.IO;
+
+using DataAnalysisProject.Source.Models;
 
 namespace DataAnalysisProject.Source.DataAccess
 {
     public class DataLoader
     {
-        public static double[] LoadDataFromCsv(string filePath)
+        public void Test()
         {
-            List<double> dataList = new List<double>();
+            Console.WriteLine("...DataLoader.cs connected");
+        }
+
+        public static YourDataType[] LoadDataFromCsv(string filePath)
+        {
+            List<YourDataType> dataList = new List<YourDataType>();
+
+
 
             try
             {
@@ -20,15 +30,15 @@ namespace DataAnalysisProject.Source.DataAccess
                     while (!reader.EndOfStream)
                     {
                         var line = reader.ReadLine();
-                        var values = line.Split(','); // Assuming CSV is comma-separated
+                        var values = line.Split(' '); // Assuming CSV is space-separated
 
                         // Parse values and create a new instance of YourDataType
-                        double dataItem = new double
+                        YourDataType dataItem = new YourDataType
                         {
                             // Assuming YourDataType has properties with appropriate data types
-                            Property1 = Convert.ToDouble(values[0]),
-                            Property2 = Convert.ToInt32(values[1]),
-                            // Add more properties based on your actual data structure
+                            Column1 = int.Parse(values[0]),
+                            Column2 = double.Parse(values[1]),
+                            Column3 = double.Parse(values[2]),
                         };
 
                         // Add the data item to the list
@@ -43,8 +53,9 @@ namespace DataAnalysisProject.Source.DataAccess
             {
                 // Handle any exceptions that occur during data loading
                 Console.WriteLine($"Error loading data from CSV: {ex.Message}");
-                return new double[0]; // Return an empty array or handle the error accordingly
+                return new YourDataType[0]; // Return an empty array or handle the error accordingly
             }
         }
     }
 }
+
