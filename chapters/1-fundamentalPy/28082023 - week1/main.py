@@ -98,7 +98,7 @@ def main():
     # To use qnorm and pnorm in R with scipy in python it is given as
     print("For different p-values, 10%, 5%, 1% the standard deviations are")
     print("For right sided test")
-    print("For 10%, the number of standard deviations are", stats.norm.ppf(1 -0.10))
+    print("For 10%, the number of standard deviations are", stats.norm.ppf(1 - 0.10))
     print("For 5%, the number of standard deviations are", stats.norm.ppf(1 - 0.05))
     print("For 1%, the number of standard deviations are", stats.norm.ppf(1 - 0.01))
     
@@ -111,6 +111,7 @@ def main():
     print("For 10%, the number of standard deviations are", stats.norm.ppf(1 - 0.10/2))
     print("For 5%, the number of standard deviations are", stats.norm.ppf(1 - 0.05/2))
     print("For 1%, the number of standard deviations are", stats.norm.ppf(1 - 0.01/2))
+
 
 
 
