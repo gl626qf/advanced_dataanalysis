@@ -91,10 +91,12 @@ def main():
 
     #Test case to check the error function
     print("Test case, should give 1 standard deviation")
+    print("Error function for 1", prob1_5.error_function(1) - prob1_5.error_function(-1))
     # print(prob1_5.error_function(1) - prob1_5.error_function(-1))
     # print(prob1_5.error_function(1))
     # print(stats.norm.cdf(1) - stats.norm.cdf(-1))
     # To use qnorm and pnorm in R with scipy in python it is given as
+    print("For different p-values, 10%, 5%, 1% the standard deviations are")
     print("For right sided test")
     print("For 10%, the number of standard deviations are", stats.norm.ppf(1 -0.10))
     print("For 5%, the number of standard deviations are", stats.norm.ppf(1 - 0.05))
@@ -105,7 +107,7 @@ def main():
     print("For 5%, the number of standard deviations are", stats.norm.ppf(0.05))
     print("For 1%, the number of standard deviations are", stats.norm.ppf(0.01))
 
-    print("For two sided test")
+    print("For two sided test, the value is plus minus the number of standard deviations")
     print("For 10%, the number of standard deviations are", stats.norm.ppf(1 - 0.10/2))
     print("For 5%, the number of standard deviations are", stats.norm.ppf(1 - 0.05/2))
     print("For 1%, the number of standard deviations are", stats.norm.ppf(1 - 0.01/2))
