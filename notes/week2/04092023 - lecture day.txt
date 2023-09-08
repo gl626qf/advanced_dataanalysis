@@ -1,0 +1,12 @@
+Plan: 
+- Before lecture
+-- Go through what it is going to be about
+- Read the chapters
+- Look at exercises if time
+
+
+
+Important: 
+- Understand the bayesian way of statistics
+-- Maybe the exercise helps
+

@@ -1,0 +1,78 @@
+Plan:
+- Look at the exercises 15 min each
+-- Write down the needed tools and reflect
+
+
+
+
+
+
+_Question 1_
+Only four points given
+- Think of the binomial distribution
+-- If more points the Poisson distribution would be better perhaps
+
+
+https://link.springer.com/article/10.1140/epja/i2013-13079-6
+Abstract.
+A measurement of the 20Na β
+-delayed alpha spectrum with a high-granularity setup has allowed the decay scheme to be revised on several points. Three new transitions of low intensity are found at low α
+ -particle energy. An R-matrix fit of the complete spectrum gives an improved description of the decay and indicates feeding to the broad 2+ α
+-cluster state close to 9MeV.
+
+
+brainstorm: 
+- Branching ratios
+-- Decay of a specific mode
+
+
+Q: question
+PA: partial answer
+A: 
+I: idea
+- Four detectors was used
+-- Q: Does they detect the same thing?
+--- PA: It is only one branching ratio which is determined
+---- All alpha decay coming from a specific state
+
+...
+- The ratios was given in percent: 
+-- 13.848(38)(18), 13.869(33)(20), 13.824(36)(24) and 13.923(39)(20)
+. the first parenthesis gives the statistical error and the second the 
+systematic error connected with cut-offs made in the spectrum etc.
+
+...
+- Can these four values be averaged, and how?
+-- I: Fit the point in a binomial distribution in Python or C#
+--- Maybe first in python
+--- Q: Does this makes sense when dealing with the same ratio
+---- Look up statistics: 
+---- Would make sense, that the value is varying, but which probability function then, 
+maybe the uniform distribution (because it is the same branching ratio). 
+
+
+-- Q: How do I handle systematic error
+
+
+The apparent lack of knowledge:
+- Which distribution
+- How to handle systematic error
+
+
+
+
+_QUESTION 2:_ Bayes theorem
+If object X exists, maybe be found in N locations with each posibilities
+P prior belief of position of object X. 
+1 unsuccesful investigation-> P' = (N-1)/(N-P)P.
+If N = 10 and there is 9 unsuccesful searches 
+- Calculate and contrast the final posteriors for a prior of 0.9 and of 0.99 
+
+
+
+
+
+
+
+
+
