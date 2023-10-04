@@ -1,0 +1,47 @@
+Plan:
+- Sketch which projects you like
+-- Make links
+- Make exercises
+
+
+
+Machine learning statistic tests:
+- https://www.site.uottawa.ca/ICML08WS/papers/J_Demsar.pdf
+
+
+
+Problem Hubble's Constant
+- Would the mean be a good measure? 
+-- 
+
+
+
+Questions to chapter 2.5
+- How is the chi2 made?
+-- 2000 simulations with 10 detector hits
+-? Can I make the simulation (how can I find the data?)
+- The expected value is the mean, as we have given as estimator
+
+-> We get high values of chisquared.
+-- Maybe try with scipy.stats
+
+
+
+
+-Time: Work on this till 15
+-- Make QM, and formulate, what you dont know
+!. Dropped this. 
+
+- ONLY focus on AD
+
+___Problem 2___:
+
+
+
+
+
+
+
+
+
+

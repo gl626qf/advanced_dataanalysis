@@ -1,0 +1,26 @@
+- Plan: 
+use 25 min on the fitting methods. 
+
+
+
+
+Resolution: 
+- Lowest value: 2
+-- Want half in the bins 
+-> The resolution was chosen to be 1, by making an arange(0, np.max(data) + 2)
+ 
+
+- How can I make the bin start at 0. 
+
+
+
+
+
+
+
+
+Selection of batches:
+
+
+
+Fitting

@@ -1,0 +1,14 @@
+plan: 
+- Go through 2.1 in 1 hour more 
+- Do Monte carlo rest of the time
+
+
+How do I find the asymmetrical uncertainties of problem 2.1.
+- What was the definition of the third method Karsten described
+-- The theory was based on MLE and on three principles
+--- Consistent, efficient and
+
+
+- Need to distinguish the different methods: 
+-- If the probability density function is given, it is method (2) I think
+--- Because we assume the function 
