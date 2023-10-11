@@ -1,0 +1,5 @@
+Plan: 
+- Plot data 
+-- try fitting methods
+--- What can be assumed
+---- Is 

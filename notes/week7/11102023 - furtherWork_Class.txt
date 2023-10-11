@@ -1,0 +1,34 @@
+Plan: 
+breathe
+
+- Use better methods to fit
+-- Maybe use chi2 and minimize
+
+
+
+
+___Improving the program____:
+
+making new version: week7/11102023_problem.ipynb
+
+
+Maybe there is something wrong with the guess: 
+- The fit does not work 
+-> Trying out chi2 methode
+--- Couldn't make it work
+-> Need to find: 
+-- What is the expected function 
+-- How can I minimize chi2
+
+
+-Thoughts_storm:
+The data should be binned. Each bin contains a number of counts. Could the sqrt(counts) be used in this 
+case? 
+- This is not the case I think. The counts for each data could be a peak, and the number of counts
+of that peak should be the error square-rooted.
+- If this was the case, could a monte-carlo also be used to find the uncertainty?
+-- Maybe it can be used now. Missing knowledge (MK): Why not just use sqrt(N) instead of montecarlo
+
+The binned data, with the scipy.stats.expon.pdf makes a normalization.
+
+
