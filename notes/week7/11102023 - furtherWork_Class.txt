@@ -32,3 +32,21 @@ of that peak should be the error square-rooted.
 The binned data, with the scipy.stats.expon.pdf makes a normalization.
 
 
+
+____In class___
+Always integrate over bins!!!
+- Or determine you don't need to
+
+
+Normalize fit functions!!!
+- or else correlation 
+
+In this problem: 
+- integrate( p1p2exp(-p2*t)dt)_{t}^{t+Dt}
+
+
+Counts are poisson distributed!
+ 
+
+
+
